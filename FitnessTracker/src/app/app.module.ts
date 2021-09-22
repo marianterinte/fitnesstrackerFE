@@ -1,3 +1,4 @@
+import { AuthService } from './auth/auth.service.ts';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -42,7 +43,7 @@ import { StopTrainingComponent } from './training/current-training/stop-training
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent],
   entryComponents:[StopTrainingComponent]
 })
