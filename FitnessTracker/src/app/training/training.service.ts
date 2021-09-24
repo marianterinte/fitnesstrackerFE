@@ -51,4 +51,8 @@ export class TrainingService {
     this.runningExercise = null;
     this.exerciseChanged.next(null);
   }
+
+  getPassedExercises(){
+    return [...this.exercises];
+  }
 }
