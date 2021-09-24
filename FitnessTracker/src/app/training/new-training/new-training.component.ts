@@ -22,8 +22,6 @@ export class NewTrainingComponent implements OnInit {
     this.newTrainingForm = new FormGroup({
       exercise: new FormControl("", Validators.required)
     })
-
-    this.newTrainingForm.controls['exercise'].setValue("0", { onlySelf: true });
   }
 
   startOnGoingTraining() {
